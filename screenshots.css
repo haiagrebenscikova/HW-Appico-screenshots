@@ -1,0 +1,214 @@
+body{
+    font-family:  'Poppins', sans-serif;
+    margin: 100px 0;
+    }
+    .screenshots {
+        padding: 100px 0;
+        text-align: center;
+    }
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        
+    }
+    .screenshots header h1{
+        font-size: 30px;
+        font-weight: 700px;
+        padding-bottom: 15px;
+        color: #444;
+    }
+    .screenshots header h2{
+        color: #777;
+        padding-bottom: 45px;
+    }
+    
+    .screenshots .g-carousel img {
+        width: 100%;
+        transition: 0.5s;
+        border: 1px solid transparent;
+        
+    }
+    .screenshots .g-carousel img{
+        transform: scale(0.6); 
+         
+    }
+    .screenshots .g-carousel .slick-current img,
+    .screenshots .g-carousel .slick-current+div+div+div+div img
+    {
+        transform: scale(0.6);
+        opacity: 0.6;
+    
+    }
+    .screenshots .g-carousel .slick-current+div img,
+    .screenshots .g-carousel .slick-current+div+div+div img{
+        transform: scale(0.8);
+    
+    }
+    .screenshots .g-carousel .slick-current+div+div img{
+        transform: scale(1.0);
+        border: 40px solid rgb(240, 240, 240); 
+        border-style: solid none solid none;
+        border-radius: 10%;
+        opacity: 1;
+        filter: drop-shadow(0 8px  6px gray);
+    }
+    .screenshots .circle {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: rgb(209, 204, 204);
+        position: absolute;
+        left: 47vw;
+        top: 51vh;
+        z-index: 1;
+    }
+    .screenshots .screen {
+        width: 45px;
+        height: 5px;
+        background-color: rgb(209, 204, 204);
+        border-radius: 20%;
+        position: absolute;
+        top: 51vh;
+        left: 98vh;
+        z-index: 1;
+    }
+    
+    .screenshots .arrows-left::before{
+        content: '<';
+        color: grey;
+        font-size: 30px;
+        position: relative;
+        left: -37.5vw;
+        top: 37vh;
+    }
+    .screenshots .arrows-right::after {
+        content: '>';
+        color: grey;
+        font-size: 30px;
+        position: relative;
+        left: 37.6vw;
+        top: 33vh;
+    }
+    @media (max-width:1260px) {
+        .screenshots .arrows-left::before {
+            position: relative;
+            left: -46vw;
+            top: 42vh; 
+        }
+        .screenshots .arrows-right::after {
+            position: relative;
+            left: 46vw;
+            top: 37.5vh;
+        }
+        .screenshots .circle {
+            position: absolute;
+            left: 47vw;
+            top: 58vh;
+            z-index: 1;
+        }
+        .screenshots .screen {
+            position: absolute;
+            top: 58vh;
+            left: 90vh;
+            z-index: 1;
+        }
+    }
+    @media (max-width:1140px) {
+        .container{
+            width: 900px;
+            margin: 0 auto;    
+        }
+        .screenshots .g-carousel .slick-current img,
+        .screenshots .g-carousel .slick-current+div+div{
+            transform: scale(0.5);
+            opacity: 0.8;     
+        }
+        .screenshots .g-carousel .slick-current+div {
+            transform: scale(1.0);
+            opacity: 1.0;
+        
+        
+        }
+        .screenshots .circle {
+            display: none;
+        }
+        .screenshots .screen {
+           display: none;
+        }
+        .screenshots .arrows-left::before {
+            display: none;
+        }
+        .screenshots .arrows-right::after {
+            display: none;
+        }
+    }
+    @media (max-width:1140px) and (orientation:portrait) {
+        .screenshots .g-carousel .slick-current img,
+        .screenshots .g-carousel .slick-current+div+div {
+            transform: scale(0.4);     
+        }
+        .screenshots .g-carousel .slick-current+div {
+            transform: scale(1.0);
+            opacity: 1;
+        }
+        body {
+            margin: 20px 0;
+        }
+    }
+    @media (max-width:940px) {
+        .container{
+            width: 90%;
+            margin: 0 auto;    
+        }
+        .screenshots {
+            padding: 10px 0;
+            text-align: center;
+        }
+        .screenshots header h2{
+            color: #777;
+            padding-bottom: 0;
+        }
+        .screenshots .g-carousel .slick-current img {
+            transform: scale(0.8);
+            border: 40px solid rgb(240, 240, 240); 
+            border-style: solid none solid none;
+            border-radius: 10%;
+            opacity: 1;
+            filter: drop-shadow(0 8px  6px gray);
+            
+        }
+        .screenshots .circle {
+           display: none;
+        }
+        .screenshots .screen {
+           display: none;
+        }
+    }
+    @media (max-width:940px) and (orientation:landscape) {
+        .screenshots .g-carousel img{
+            width: auto;
+            height: 97vh;
+            display: inline-block;
+            opacity: 1;
+        }
+        .screenshots .g-carousel .slick-slide {
+            text-align: center;
+        }
+    }
+    @media (max-width:440px) {
+        .screenshots .circle {
+            display: none;
+        }
+        .screenshots .screen {
+            display: none;
+        }
+    }
+    @media (max-width:1000px) and (orientation:landscape) {
+        .screenshots .circle {
+            display: none;
+        }
+        .screenshots .screen {
+            display: none;
+        }
+    }
+    
